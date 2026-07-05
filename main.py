@@ -51,6 +51,9 @@ async def nedir(ctx):
 async def etki(ctx):
     await ctx.send(f'{random.choice(etkileri)}')
 
+@bot.command()
+async def yardım(ctx):
+    await ctx.send(f'Komutlar:\n.foto - Rastgele bir fotoğraf gönderir.\n.nedir - İklim değişikliği hakkında bilgi verir.\n.etki - İklim değişikliğinin etkilerinden birini rastgele seçer ve gönderir.\n.ne_yapmalıyız - İklim değişikliği ile mücadele için yapılabileceklerden birini rastgele seçer ve gönderir.')
 
 @bot.command()
 async def ne_yapmalıyız(ctx):
